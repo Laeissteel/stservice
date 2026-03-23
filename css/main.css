@@ -1,0 +1,169 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.promo__list {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 33.75rem));
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.promo__item {
+  max-width: 33.75rem;
+}
+
+.promo__link {
+  padding: 2rem 1rem;
+  height: 100%;
+  display: grid;
+  gap: 3rem;
+  border: solid .25rem var(--primary-color);
+  border-radius: 1rem;
+}
+
+.promo__title,
+.promo__subtitle,
+.promo__info {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.promo__subtitle,
+.promo__info {
+  align-self: end;
+}
+
+.promo__title {
+  color: var(--accent-color-3);
+}
+
+.promo__subtitle span {
+  color: var(--accent-color-2);
+}
+
+.promo__info {
+  color: var(--accent-color-4);
+}
+
+.main__solutions {
+  padding: 3rem 0;
+}
+
+.solutions__title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.solutions__list {
+  margin: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.solutions__item {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.solutions__item::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 14px;
+  left: 5px;
+}
+
+.works__inner {
+  padding: 3rem 0;
+}
+
+.works__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.works__swiper-wrapper {
+  margin: 0 auto;
+  position: relative;
+  max-width: 900px;
+}
+
+.works__wrapper {
+  align-items: center;
+}
+
+.works__slide {
+  padding: 1rem;
+  border: solid 3px var(--accent-color-2);
+  border-radius: .5rem;
+}
+
+.works__slide img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.works-button-prev,
+.works-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.works-button-prev {
+  left: -70px;
+}
+
+.works-button-next {
+  right: -70px;
+}
+
+.works-button-prev svg,
+.works-button-next svg {
+  width: 60px;
+  height: 60px;
+  color: var(--accent-color-2);
+}
+
+.works-button-prev svg {
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+

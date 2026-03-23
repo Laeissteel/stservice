@@ -1,5 +1,6 @@
 @import "global.css";
 @import "header.css";
+@import "main.css";
 @import "footer.css";
 
 @media (max-width: 992px) {
@@ -30,12 +31,45 @@
     flex-direction: column;
   }
 
+  .promo__list {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .promo__item {
+    justify-self: center;
+  }
+
+  .works__swiper-wrapper {
+    max-width: 650px;
+  }
+
+  .works-button-prev {
+    left: -60px;
+  }
+
+  .works-button-next {
+    right: -60px;
+  }
+
+/*  max-width: 992px */
+
 }
 
 @media (max-width: 768px) {
+
+
   .header__logo,
   .footer__logo {
     max-width: 150px;
+  }
+
+  .promo__link {
+    gap: 1rem;
+  }
+
+  .works__swiper-wrapper {
+    max-width: 400px;
   }
 
   .footer__inner {
@@ -55,13 +89,64 @@
   .footer__logo-2 {
     max-width: 90px;
   }
+
+/*  max-width: 768px */
+}
+
+@media (max-width: 576px) {
+  .promo__list {
+    row-gap: 1rem;
+  }
+
+  .promo__link {
+    padding: 1rem 0.5rem;
+  }
+
+  .promo__title,
+  .promo__subtitle,
+  .promo__info {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .solutions__title {
+    font-size: 1.8rem;
+  }
+
+  .solutions__list {
+    font-size: 1rem;
+  }
+
+  .works__title {
+    font-size: 1.3rem;
+  }
+
+  .works__swiper-wrapper {
+    max-width: 280px;
+  }
+
+
+
+/*  max-width: 576px */
 }
 
 @media (max-width: 420px) {
+
+  .solutions__title {
+    font-size: 1.5rem;
+  }
+
+
+  .works__swiper-wrapper {
+    max-width: 200px;
+  }
 
 
   .footer__logo-2 {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
   }
+
+/*  max-width: 420px  */
 }
