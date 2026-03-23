@@ -1,0 +1,51 @@
+.footer__inner {
+  padding: 3.75rem -0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem 1rem;
+}
+
+.footer__logo {
+  max-width: 200px;
+}
+
+.footer__logo img,
+.footer__logo-2 img {
+  width: 100%;
+}
+
+.footer__list {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.footer__item:first-child {
+  margin-bottom: .25rem;
+}
+
+.footer__link {
+  padding: .25rem 0;
+  display: block;
+}
+
+
+.footer__logo-2 {
+  max-width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary-color: #000;
+  --accent-color: #ad1722;
+  --accent-color-2: #ffc90f;
+  --accent-color-3: #a5363a;
+  --accent-color-4: #909090;
+  --bg-color: #fff;
+  --transition: all .15s;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 60px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.body {
+  background: var(--bg-color);
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  line-height: 1.25rem;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1230px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.burger-icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+
+.burger-icon span {
+  position: relative;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  position: absolute;
+}
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background-color: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
