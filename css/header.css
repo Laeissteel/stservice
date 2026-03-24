@@ -8,7 +8,7 @@
 
 .header__logo {
   max-width: 200px;
-  z-index: 100;
+  z-index: 11;
 }
 
 .header__logo img {

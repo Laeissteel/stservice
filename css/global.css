@@ -1,5 +1,6 @@
 :root {
   --font-family: "Roboto", sans-serif;
+  --second-family: "Oswald", sans-serif;
   --primary-color: #000;
   --accent-color: #ad1722;
   --accent-color-2: #ffc90f;
@@ -7,11 +8,18 @@
   --accent-color-4: #909090;
   --bg-color: #fff;
   --transition: all .15s;
+
+/*  Чекбокс  */
+  --chk-size: 17px;         /* Размер квадратика */
+  --chk-bg: #fff;           /* Фон */
+  --chk-border: #333;       /* Цвет границы */
+  --chk-active-bg: #ffcc00; /* Цвет при выборе (золотой, как кран!) */
+  --chk-tick-color: #000;   /* Цвет самой галочки */
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 60px;
+  scroll-padding: 30px;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -34,7 +42,11 @@ html {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1430px;
+  max-width: 1230px;
+}
+
+.title {
+  font-family: var(--second-family);
 }
 
 .main {
@@ -90,6 +102,10 @@ html {
 .body--opened-menu .burger-icon span::after {
   bottom: 0;
   transform: rotate(-45deg);
+}
+
+.body--opened-modal {
+  overflow: hidden;
 }
 
 

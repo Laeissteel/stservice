@@ -1,0 +1,191 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-color);
+  z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.body--opened-modal .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__window {
+  padding: 1.9rem;
+  width: 100%;
+  max-width: 35rem;
+  border-radius: .75rem ;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal__cancel {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: var(--transition);
+}
+
+.modal__cancel:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.modal__cancel svg {
+  width: 24px;
+  height: 24px;
+}
+
+.modal__title {
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+.modal__subtitle {
+  margin-bottom: 1.25rem;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  margin-bottom: 20px;
+}
+
+.modal__label input {
+  padding: 1rem 15px;
+  display: block;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  background: #f1f1f1;
+  color: #727376;
+  text-shadow: none;
+  font-size: 1rem;
+  line-height: 1.42857143;
+  border-radius: calc(.25rem + 1px);
+  transition: var(--transition);
+}
+
+.modal__label input:focus {
+  background: #fff;
+  border-color: #D9DDE1;
+}
+
+/* Скрываем стандартный чекбокс, но оставляем его доступным для табуляции */
+.modal__checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.modal__checkbox {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: .85rem;
+  color: var(--accent-color-4);
+}
+
+/* Наш кастомный квадрат */
+.modal__checkbox__custom {
+  flex-shrink: 0; /* Чтобы не сжимался */
+  width: var(--chk-size);
+  height: var(--chk-size);
+  border: 1px solid var(--accent-color-4);
+  background-color: var(--chk-bg);
+  border-radius: 4px; /* Можно сделать 50% для круга */
+  margin-right: 12px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Рисуем галочку через псевдоэлемент (скрыта по умолчанию) */
+.modal__checkbox__custom::after {
+  content: "";
+  position: absolute;
+  /* Геометрия галочки: рисуем две стороны квадрата и поворачиваем */
+  left: 40%;
+  top: 12%;
+  width: 35%;
+  height: 60%;
+  border: solid var(--chk-tick-color);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.2s ease;
+}
+
+/* СОСТОЯНИЕ: Когда чекбокс нажат */
+.modal__checkbox__input:checked + .modal__checkbox__custom {
+  background-color: var(--chk-active-bg);
+  border-color: var(--chk-active-bg);
+}
+
+.modal__checkbox__input:checked + .modal__checkbox__custom::after {
+  transform: rotate(45deg) scale(1); /* Проявляем галочку */
+}
+
+/* Эффект при наведении для лоска */
+.modal__checkbox:hover .checkbox__custom {
+  border-color: var(--chk-active-bg);
+}
+
+.modal__checkbox a {
+  color: var(--accent-color);
+  transition: var(--transition);
+}
+
+.modal__checkbox a:hover,
+.modal__btn input:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.modal__btn {
+ align-self: start;
+}
+
+.modal__btn input {
+  padding: 1rem 1.25rem;
+  justify-self: end;
+  background-color: var(--accent-color);
+  border-radius: 0.4rem;
+  color: #fff;
+  transition: var(--transition);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

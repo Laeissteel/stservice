@@ -25,8 +25,12 @@
 }
 
 .footer__link {
-  padding: .25rem 0;
   display: block;
+  transition: var(--transition);
+}
+
+.footer__link:hover {
+  opacity: .8;
 }
 
 

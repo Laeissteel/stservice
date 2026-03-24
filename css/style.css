@@ -2,6 +2,8 @@
 @import "header.css";
 @import "main.css";
 @import "footer.css";
+@import "modal.css";
+@import "privacy-poclicy.css";
 
 @media (max-width: 992px) {
   .burger-icon {
@@ -52,6 +54,14 @@
     right: -60px;
   }
 
+
+  .crane-1__inner,
+  .crane-2__inner {
+    padding: 0;
+    background-image: none;
+  }
+
+
 /*  max-width: 992px */
 
 }
@@ -71,6 +81,30 @@
   .works__swiper-wrapper {
     max-width: 400px;
   }
+
+  .crane-1__title,
+  .crane-2__title {
+    margin-bottom: 3rem;
+    padding-left: 0;
+    max-width: 33rem;
+    font-size: 3rem;
+  }
+
+  .crane-1__description {
+    flex-direction: column;
+  }
+
+  .delivery__list {
+    grid-template-columns: 1fr;
+  }
+
+  .crane-1__diagram,
+  .crane-1__config {
+    padding-left: 0;
+  }
+
+
+
 
   .footer__inner {
     display: grid;
@@ -124,6 +158,19 @@
 
   .works__swiper-wrapper {
     max-width: 280px;
+  }
+
+  .crane-1__title,
+  .crane-2__title {
+    margin-bottom: 2rem;
+    max-width: 20rem;
+    font-size: 2rem;
+  }
+
+  .delivery-title,
+  .crane-1__diagram-title,
+  .crane-1__config-title {
+    font-size: 1.5rem;
   }
 
 
