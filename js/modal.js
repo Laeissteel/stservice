@@ -4,8 +4,6 @@ export const modalInit = () => {
   const modal = document.querySelector('.modal')
 
 
-
-
   const getScrollbarWidth = () => {
     let div = document.createElement('div');
     div.style.width = '100px';
