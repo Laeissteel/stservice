@@ -104,6 +104,7 @@ html {
   transform: rotate(-45deg);
 }
 
+.body--opened-menu,
 .body--opened-modal {
   overflow: hidden;
 }
