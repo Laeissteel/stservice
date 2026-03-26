@@ -92,8 +92,8 @@
   height: 2px;
   background-color: var(--primary-color);
   position: absolute;
-  top: 14px;
-  left: 5px;
+  top: .875rem;
+  left: .35rem;
 }
 
 .works__inner {
@@ -216,6 +216,7 @@
   display: flex;
   flex-direction: column;
   gap: .25rem;
+  font-weight: 600;
 }
 
 .crane-1__item,
@@ -233,7 +234,7 @@
   border-radius: 50px;
   background-color: var(--primary-color);
   position: absolute;
-  top: .6rem;
+  top: .55rem;
   left: calc(.25rem - 1px);
 }
 
@@ -259,6 +260,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  font-weight: 600;
 }
 
 .crane-1__diagram,
